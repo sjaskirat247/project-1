@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/modern-reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
     <title>Portfolio</title>
     <meta name="author" content="jaskirat">
 	<meta name="description" content= "This website shows my portfolio and all my works done so far at one place.">
@@ -16,21 +20,24 @@
      <!-- Box-icons -->
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/modern-reset.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-    <script src="js/main.js" defer></script>
+   
+   
 
 </head>
+
 <body>
+  <!-- scroll top -->
+  <a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-chevron-up scrolltop_icon'></i>
+</a>
+  <!-- header -->
     <header class="l-header" id="header">
       <nav class="nav bd-container" >
         <a href="#" class="nav_logo">J Singh</a>
 
         <div class="nav_menu" id="nav-menu">
           <ul class="nav_list">
-            <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+            <li class="nav_item"><a href="#home" class="nav_link active-link">Home</a></li>
             <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
             <li class="nav_item"><a href="#services" class="nav_link">Services</a></li>
             <li class="nav_item"><a href="#portfolio" class="nav_link">Portfolio</a></li>
@@ -39,16 +46,39 @@
           </ul>
         </div>
 
-        <div class="nav_toggle" id="nav_toggle">
+        <div class="nav_toggle" id="nav-toggle">
             <i class='bx bx-menu'></i>
         </div>
       </nav>
     </header>
-    <main>
+    
+    <main class="l-main">
+      <section class="home" id="home">
+        <div class="home_container bd-container bd-grid">
+          <div class="home_data">
+            <span class="home_greeting">My name is </span>
+            <h1 class="home_name">J Singh</h1>
+            <span class="home_profession">Web Developer</span>
+            <a download="" href="" class="button">Download Cv</a>
+          </div>
+        
 
+        <div class="home_social">
+          <a href="#" class="home_social-icon"><i class='bx bxl-facebook-square' ></i></a>
+          <a href="#" class="home_social-icon"><i class='bx bxl-instagram' ></i></a>
+          <a href="#" class="home_social-icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+
+        <div class="home-img">
+          <img src="" alt="">
+        </div>
+      </div>
+      </section>
     </main>
     <footer>
 
     </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
